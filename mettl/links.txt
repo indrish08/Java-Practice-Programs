@@ -1,21 +1,11 @@
 1. Number of Primes in a specified range 
 https://tests.mettl.com/authenticateKey/87c41143
 
-2.All Digits Count
- https://tests.mettl.com/authenticateKey/ed6b4da
-
-3.Unique Digits Count
- https://tests.mettl.com/authenticateKey/b7aac4a5 
-
-4.Non-Repeated Digits’ Count
- https://tests.mettl.com/authenticateKey/e46500f5
-
  Create PIN using alpha, beta, gamma 
 https://tests.mettl.com/authenticateKey/be582d9f 
 
 Weight of a hill pattern
  https://tests.mettl.com/authenticateKey/d612c0e6 
-
 
 Return second word in Uppercase https://tests.mettl.com/authenticateKey/4a72723f 
 is Palindrome (string) https://tests.mettl.com/authenticateKey/ffe8042
