@@ -2,12 +2,12 @@ package D31_10_22;
 
 public class CharacterSwapping {
     public static void main(String[] args) {
-        String str="tody is is today h";
+        String str="tody is is today";
         System.out.println(str);
         String out="";
         str=str.toLowerCase();
         String[] sa=str.split("[ ]");
-        int len=(sa.length%2);len*=2;
+        int len=sa.length; if(sa.length%2==1) len-=1;
         System.out.println((len));
         for(int i=0;i<len;i+=2){
             int l1=sa[i].length(),
@@ -32,10 +32,10 @@ public class CharacterSwapping {
                 t=sa[i];
                 out+=t;
             }
+            out+=" ";
         }
         if(sa.length%2==1){
             String t=sa[sa.length-1];
-            out+=" ";
             for(int i=t.length()-1;i>=0;i--){
                 out+=t.charAt(i);
             }
