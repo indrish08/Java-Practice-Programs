@@ -6,7 +6,7 @@ public class passwordValidation {
 	private static int slc,clc,alc,numc,scc;
 	
 	public static void main( String [] args ) {
-		String input1="v2aLi5D@p9ass^";
+		String input1="v2aLi5D@p9asp^";
 		userMethod(input1); 
 		System.out.println( output1 ); 
 	}
