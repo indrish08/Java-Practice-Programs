@@ -1,4 +1,4 @@
-public class cipher {
+public class chiper {
     public static void main(String[] args) {
         String pt ="GFG";
         String key ="HILLMAGIC";

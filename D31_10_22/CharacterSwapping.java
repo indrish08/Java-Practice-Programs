@@ -2,7 +2,7 @@ package D31_10_22;
 
 public class CharacterSwapping {
     public static void main(String[] args) {
-        String str="tody is is today";
+        String str="Tody is preassessment";
         System.out.println(str);
         String out="";
         str=str.toLowerCase();
@@ -41,8 +41,5 @@ public class CharacterSwapping {
             }
         }
         System.out.println(out);
-
-        if(sa.length%2==0){
-        }
     }
 }
