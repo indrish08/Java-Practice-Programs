@@ -3,7 +3,7 @@ package D31_10_22;
 public class Encryption {
     public static String output1;
     public static void main( String [] args ) {
-        userMethod( "Engineering" ); //Test Cases
+        userMethod( "EngIneering" ); //Test Cases
         System.out.println( output1 ); //Check the output value
     }
     
@@ -12,14 +12,19 @@ public class Encryption {
         String str=input1.toLowerCase();
         String out="";
         char key=str.charAt(str.length()-1);
-        int nKey=pos(key);
+        int nKey=key-96;
         for(int i=0;i<str.length()-1;i++){
-            if(pos(str.charAt(i))-nKey < 0){
-                
+            int t=str.charAt(i)-nKey;
+            if(t <= 96){
+                t+=26;
             }
-            out+= (char)(pos(str.charAt(i))-nKey);
+            if(Character.isUpperCase(input1.charAt(i))){
+                t-=32;
+            }
+            out+= (char)(t);
         }
-        output1=""; // assign the output value at the end
+        out+=key;
+        output1=out; // assign the output value at the end
     }
     static int pos(char ch){
         return ch - 'a';
