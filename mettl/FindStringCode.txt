@@ -1,0 +1,24 @@
+import java.io.*;
+import  java.util.*;
+
+// Read only region start
+class UserMainCode
+{
+
+	public int findStringCode(String input1){
+		// Read only region end
+		// Write code here...
+		input1=input1.toUpperCase();
+		String[] a = input1.split(" ");
+		String out="";
+		for(String s:a){
+			int len=s.length(), sum=0;
+			for(int i=0;i<len/2;i++){
+				sum+=Math.abs((s.charAt(i))-s.charAt(len-i-1));
+			}
+			if(len%2!=0) sum+=s.charAt((len/2))-64;
+			out+=sum;
+		}
+		return Integer.parseInt(out);
+	}
+}

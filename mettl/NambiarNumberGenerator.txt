@@ -1,0 +1,42 @@
+https://tests.mettl.com/authenticateKey/7db6c8a4
+
+import java.io.*;
+import  java.util.*;
+
+// Read only region start
+class UserMainCode
+{
+
+	public int nnGenerator(String input1){
+		// Read only region end
+        String out="";
+        int len=input1.length(), i=0, n;
+        boolean stop=false;
+
+        while(i<len){
+            n=Integer.parseInt(input1.charAt(i++)+"");
+
+            while(n%2==0){
+                if(i==len) break;
+                n+=Integer.parseInt(input1.charAt(i++)+"");
+                if(n%2!=0){
+                	out+=n;
+                    stop=true;
+                }
+            }
+            
+            if(stop){
+                stop=false;
+                continue;
+            }
+            
+            while(n%2!=0){
+                if(i==len) break;
+                n+=Integer.parseInt(input1.charAt(i++)+"");
+            }
+            out+=n;
+            
+        }
+		return Integer.parseInt(out);
+    }
+}
